@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: monospace;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+    width: inherit;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    background-color: #89ABE3;
+}
+
+#drum-machine{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(5,1fr);
+    column-gap: 20px;
+    height:20vh;
+    width:30vw;
+    min-width: 700px;
+    margin: 0 auto;
+    outline: solid 5px #ba586d;
+    padding: 20px;
+    background-color: #EA738D;
+}
+
+.drum-pad{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px black;
+    margin: 0;
+    padding: 0;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px grey;
+    cursor: pointer;
+}
+#pad-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 10px;
+    row-gap: 10px;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    grid-row-start: 1;
+    grid-row-end: 6;
+}
+#logo{
+    text-align: right;
+    color: darkslategrey;
+    font-size: 2rem;
+}
+#controller{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5,1fr);
+    grid-row-start:2;
+    grid-row-end: 6;
+    text-align: center;      
+}
+
+
+
+.select{
+    width: 2vw;
+    min-width: 50px;
+    height: 1.5vh;
+    padding: 1px;
+    background-color: rgb(128, 128, 128);
+    border: solid black 1px;    
+    margin: 0 auto;
+    cursor: pointer;
+}
+.switch{
+    position:relative;
+    height: 100%;
+    width: 50%;
+    background-color: #73EAD0;    
+}
+
+#screen{
+    display: flex;
+    height: 3vh;
+    width: 70%;
+    background-color: #78f3d9d8 ;
+    margin: 1vh auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider{
+    -webkit-appearance: none ;
+    appearance: none;
+    margin: 1vh auto;
+    width: 70%;
+    height: 1.5vh;
+    opacity: 0.8;
+    outline: none;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    background-color: rgb(128, 128, 128);
+}
+.slider::-webkit-slider-thumb{
+    -webkit-apperance: none;
+    appearance: none;
+    height: 1.5vh;
+    width: 1.5vh;
+    background-color: #78f3d9d8;
+    cursor: pointer;
+
+}
+
+.slider:hover{
+    opacity: 1
+}
+
+.toggled{
+    float: right
+}
+
+.pressed{
+    background-color: #ab5467;
+    box-shadow: 0 0 0;
+}
