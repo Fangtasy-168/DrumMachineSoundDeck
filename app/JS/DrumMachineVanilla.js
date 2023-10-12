@@ -164,55 +164,55 @@ let heater = [
         id: "Closed-HH",
         url: "https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3"
     }]
-    ,
-    chords = [
 
-        {
-            key: "q",
-            id: "Chord-1",
-            url: "https://s3.amazonaws.com/freecodecamp/drums/Chord_1.mp3"
-        },
-        {
-            key: "w",
-            id: "Chord-2",
-            url: "https://s3.amazonaws.com/freecodecamp/drums/Chord_2.mp3"
-        },
-        {
-            key: "e",
-            id: "Chord-3",
-            url: "https://s3.amazonaws.com/freecodecamp/drums/Chord_3.mp3"
-        },
-        {
-            key: "a",
-            id: "Shaker",
-            url: "https://s3.amazonaws.com/freecodecamp/drums/Give_us_a_light.mp3"
-        },
-        {
-            key: "s",
-            id: "Open-HH",
-            url: "https://s3.amazonaws.com/freecodecamp/drums/Dry_Ohh.mp3"
-        },
-        {
-            key: "d",
-            id: "Closed-HH",
-            url: "https://s3.amazonaws.com/freecodecamp/drums/Bld_H1.mp3"
-        },
-        {
-            key: "z",
-            id: "Punchy-Kick",
-            url: "https://s3.amazonaws.com/freecodecamp/drums/punchy_kick_1.mp3"
-        },
-        {
-            key: "x",
-            id: "Side-Stick",
-            url: "https://s3.amazonaws.com/freecodecamp/drums/side_stick_1.mp3"
-        },
-        {
-            key: "c",
-            id: "Snare",
-            url: "https://s3.amazonaws.com/freecodecamp/drums/Brk_Snr.mp3"
-        }
-    ]
+chords = [
+
+    {
+        key: "q",
+        id: "Chord-1",
+        url: "https://s3.amazonaws.com/freecodecamp/drums/Chord_1.mp3"
+    },
+    {
+        key: "w",
+        id: "Chord-2",
+        url: "https://s3.amazonaws.com/freecodecamp/drums/Chord_2.mp3"
+    },
+    {
+        key: "e",
+        id: "Chord-3",
+        url: "https://s3.amazonaws.com/freecodecamp/drums/Chord_3.mp3"
+    },
+    {
+        key: "a",
+        id: "Shaker",
+        url: "https://s3.amazonaws.com/freecodecamp/drums/Give_us_a_light.mp3"
+    },
+    {
+        key: "s",
+        id: "Open-HH",
+        url: "https://s3.amazonaws.com/freecodecamp/drums/Dry_Ohh.mp3"
+    },
+    {
+        key: "d",
+        id: "Closed-HH",
+        url: "https://s3.amazonaws.com/freecodecamp/drums/Bld_H1.mp3"
+    },
+    {
+        key: "z",
+        id: "Punchy-Kick",
+        url: "https://s3.amazonaws.com/freecodecamp/drums/punchy_kick_1.mp3"
+    },
+    {
+        key: "x",
+        id: "Side-Stick",
+        url: "https://s3.amazonaws.com/freecodecamp/drums/side_stick_1.mp3"
+    },
+    {
+        key: "c",
+        id: "Snare",
+        url: "https://s3.amazonaws.com/freecodecamp/drums/Brk_Snr.mp3"
+    }
+]
 
 
 
