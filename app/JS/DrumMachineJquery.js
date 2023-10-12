@@ -77,8 +77,10 @@ function ifPowered(flip) {
 }
 // Volume Control let's a go 
 function adjuster() {
-    volumeLevel = $("#volume-slider").val()
-    screen.text(`Volume: ${Math.floor(volumeLevel * 100)}`)
+    if (power) {
+        volumeLevel = $("#volume-slider").val()
+        screen.text(`Volume: ${Math.floor(volumeLevel * 100)}`)
+    }
 }
 
 //Bank Switch
