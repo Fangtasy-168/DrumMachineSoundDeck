@@ -34,6 +34,7 @@ function handleKeyDown(e) {
 // function that handles audio triggering
 function triggerAudio(sound, padTargeted) {
     if (power) {
+        sound.load()
         sound.currentTime = 0
         sound.volume = volumeLevel
         sound.play()
