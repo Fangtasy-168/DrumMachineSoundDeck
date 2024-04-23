@@ -1,0 +1,180 @@
+:root{
+    --background: #F0EDE0;
+    --machine:#040E10;
+    --active: #871746;
+    --screen: #CB9A9F;
+}
+
+
+body{
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    caret-color: transparent;
+    background-color: var(--background);
+    color: var(--machine);
+    font-size:larger
+}
+
+#drumMachine{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height:fit-content;
+    width: 700px;
+    gap: 5px;
+    padding: 20px;
+    border: solid var(--machine) 5px;
+}
+
+.touchPad{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+}
+.drum-pad{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border: solid black;
+    box-sizing: border-box;     
+    border-radius: 10%;
+    box-shadow: 1px 1px 1px black
+}
+
+#controller{
+    display: grid;
+    grid-template-rows: repeat(4,auto);
+    gap: 10px;
+}
+#logo{
+    text-align: center;
+    font-size: x-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    position: relative;
+    width: 40%;
+    padding: 2px;
+    background-color: #d9d4cf;
+    cursor: pointer;
+}
+
+#power{
+    display: flex;
+    justify-content: end;
+    padding: 5px;
+}
+
+#display{
+    text-align: center;
+}
+
+#screen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 40px;
+    width: 80%;
+    background-color: var(--screen);
+    box-shadow: inset 2px 2px 2px 2px rgba(0, 0, 0, 0.879);
+}
+
+#volume{
+    width:100%;
+    text-align: center;
+}
+#library{
+    text-align: center;
+    padding: 5px;
+}
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 15px;
+    input{
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+}
+
+.switchSlider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #56120a;
+    -webkit-transition: .4s;
+    transition: .4s;
+    &:before{
+        position: absolute;
+        content: "";
+        height: 9px;
+        width: 12px;
+        left: 3px;
+        bottom: 3px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+  }
+  
+  input:checked + .switchSlider {
+    background-color: #ffcf40;
+  }
+  
+  
+  input:checked + .switchSlider:before {
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+
+
+  
+  input:checked + .pressed {
+    background-color: #ffcf40;
+  }
+  .pressed{
+    background-color: var(--active);
+    box-shadow: inset 2px 2px 2px  black
+  }
+
+  .volumeSlider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 80%; 
+    height: 15px; 
+    background: #d3d3d3; 
+    outline: none; 
+    opacity: 0.7; 
+    -webkit-transition: .2s; 
+    transition: opacity .2s;
+    &:hover{
+        opacity: 1
+    }
+    &::-webkit-slider-thumb {
+        -webkit-appearance: none; 
+        appearance: none;
+        width: 15px; 
+        height: 15px; 
+        background: var(--screen); 
+        cursor: pointer; 
+      }
+  }
+  
+  .volumeSlider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #04AA6D; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
